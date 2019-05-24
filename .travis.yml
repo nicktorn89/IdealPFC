@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "7"
+
+branches:
+  only:
+  - master
+  - develop
+
+script:
+  - npm run build
