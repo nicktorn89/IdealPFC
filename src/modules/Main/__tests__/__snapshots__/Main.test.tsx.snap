@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Main /> should be equal to snapshot 1`] = `
+<Fragment>
+  <HeaderComponent />
+  <FormComponent
+    onChangeField={[Function]}
+    values={
+      Object {
+        "age": 0,
+        "height": 0,
+        "weight": 0,
+      }
+    }
+  />
+  <ChartPFC
+    data={
+      Array [
+        Object {
+          "color": "#FFFF4C",
+          "name": "Белки",
+          "value": 200,
+        },
+        Object {
+          "color": "#FF4C4C",
+          "name": "Жиры",
+          "value": 150,
+        },
+        Object {
+          "color": "#4C4CFF",
+          "name": "Углеводы",
+          "value": 650,
+        },
+      ]
+    }
+  />
+  <LineChart
+    data={
+      Array [
+        Object {
+          "calories": 2500,
+          "name": "1 неделя",
+        },
+        Object {
+          "calories": 2300,
+          "name": "2 неделя",
+        },
+        Object {
+          "calories": 2100,
+          "name": "3 неделя",
+        },
+        Object {
+          "calories": 1900,
+          "name": "4 неделя",
+        },
+        Object {
+          "calories": 1700,
+          "name": "5 неделя",
+        },
+      ]
+    }
+  />
+</Fragment>
+`;

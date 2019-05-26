@@ -2,11 +2,11 @@ import React from 'react';
 import { Section } from 'react-bulma-components/full';
 import { LineChartProps } from './types';
 import { LineChart as VendorLineChart, Line, Legend, Tooltip, YAxis, XAxis, CartesianGrid } from 'recharts';
-import isEmpty from 'ramda/es/isEmpty';
+import * as R from 'ramda';
 
 const LineChart: React.FC<LineChartProps> = ({ data }) => {
 
-  if (isEmpty(data)) return null;
+  if (R.isEmpty(data)) return null;
 
   return (
     <Section>

@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should be equal to snapshot 1`] = `
+<t
+  active={false}
+  className=""
+  color={null}
+  fixed={null}
+  renderAs="nav"
+  style={Object {}}
+  transparent={false}
+>
+  <c
+    className=""
+    style={Object {}}
+  >
+    <c
+      active={false}
+      className=""
+      dropdown={false}
+      dropdownUp={false}
+      hoverable={false}
+      renderAs="a"
+      style={Object {}}
+    >
+      IdealPFC
+    </c>
+  </c>
+  <c
+    className=""
+    position="end"
+    renderAs="div"
+    style={Object {}}
+  >
+    <c
+      active={false}
+      className=""
+      dropdown={false}
+      dropdownUp={false}
+      hoverable={false}
+      renderAs="a"
+      style={Object {}}
+    >
+      Toggle in night mode
+    </c>
+  </c>
+</t>
+`;
