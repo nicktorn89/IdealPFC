@@ -3,9 +3,11 @@ import { MainState, MainProps } from './types';
 import FormComponent from '../../components/Form';
 import HeaderComponent from 'src/components/Header';
 import ChartPFC from 'src/components/ChartPFC';
-import { ChartData } from 'src/components/ChartPFC/types';
+import { PieChartData } from 'src/components/ChartPFC/types';
+import LineChart from 'src/components/LineChart';
+import { LineChartData } from 'src/components/LineChart/types';
 
-const dataMock: ChartData[] = [
+const dataMock: PieChartData[] = [
   {
     name: 'Белки',
     value: 200,
@@ -20,6 +22,29 @@ const dataMock: ChartData[] = [
     name: 'Углеводы',
     value: 650,
     color: '#4C4CFF',
+  },
+];
+
+const anotherMock: LineChartData[] = [
+  {
+    name: '1 неделя',
+    calories: 2500,
+  },
+  {
+    name: '2 неделя',
+    calories: 2300,
+  },
+  {
+    name: '3 неделя',
+    calories: 2100,
+  },
+  {
+    name: '4 неделя',
+    calories: 1900,
+  },
+  {
+    name: '5 неделя',
+    calories: 1700,
   },
 ];
 
@@ -47,6 +72,7 @@ export class Main extends React.Component<MainProps, MainState> {
           onChangeField={this.handleFieldChange}
         />
         <ChartPFC data={dataMock} />
+        <LineChart data={anotherMock} />
       </React.Fragment>
     );
   }
