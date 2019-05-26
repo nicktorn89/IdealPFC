@@ -37,6 +37,14 @@ module.exports = {
           { loader: 'css-loader', options: { importLoaders: 1 } }],
       },
       {
+        test: /\.sass$/,
+        use: [
+          "style-loader", // creates style nodes from JS strings
+          "css-loader", // translates CSS into CommonJS
+          "sass-loader" // compiles Sass to CSS, using Node Sass by default
+        ], 
+      },
+      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
           'file-loader?hash=sha512&digest=hex&name=img/[hash].[ext]',

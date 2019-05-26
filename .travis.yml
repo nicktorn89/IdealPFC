@@ -6,6 +6,3 @@ branches:
   only:
   - master
   - develop
-
-script:
-  - npm run build
