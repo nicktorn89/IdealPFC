@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LineChart /> should be equal to snapshot 1`] = `
+<c
+  className=""
+  renderAs="section"
+  size={null}
+  style={Object {}}
+>
+  <LineChart
+    barCategoryGap="10%"
+    barGap={4}
+    data={
+      Array [
+        Object {
+          "calories": 2500,
+          "name": "1 неделя",
+        },
+        Object {
+          "calories": 2300,
+          "name": "2 неделя",
+        },
+        Object {
+          "calories": 2100,
+          "name": "3 неделя",
+        },
+        Object {
+          "calories": 1900,
+          "name": "4 неделя",
+        },
+        Object {
+          "calories": 1700,
+          "name": "5 неделя",
+        },
+      ]
+    }
+    height={250}
+    layout="horizontal"
+    margin={
+      Object {
+        "bottom": 5,
+        "left": 20,
+        "right": 30,
+        "top": 5,
+      }
+    }
+    reverseStackOrder={false}
+    stackOffset="none"
+    width={730}
+  >
+    <CartesianGrid
+      fill="none"
+      horizontal={true}
+      horizontalFill={Array []}
+      horizontalPoints={Array []}
+      stroke="#ccc"
+      strokeDasharray="3 3"
+      vertical={true}
+      verticalFill={Array []}
+      verticalPoints={Array []}
+    />
+    <XAxis
+      allowDataOverflow={false}
+      allowDecimals={true}
+      allowDuplicatedCategory={true}
+      dataKey="name"
+      domain={
+        Array [
+          0,
+          "auto",
+        ]
+      }
+      height={30}
+      hide={false}
+      mirror={false}
+      orientation="bottom"
+      padding={
+        Object {
+          "left": 0,
+          "right": 0,
+        }
+      }
+      reversed={false}
+      scale="auto"
+      tickCount={5}
+      tickMargin={20}
+      type="category"
+      width={0}
+      xAxisId={0}
+    />
+    <YAxis
+      allowDataOverflow={false}
+      allowDecimals={true}
+      allowDuplicatedCategory={true}
+      domain={
+        Array [
+          0,
+          3000,
+        ]
+      }
+      height={0}
+      hide={false}
+      mirror={false}
+      orientation="left"
+      padding={
+        Object {
+          "bottom": 0,
+          "top": 0,
+        }
+      }
+      reversed={false}
+      scale="auto"
+      tickCount={5}
+      tickMargin={20}
+      type="number"
+      unit="ккал"
+      width={60}
+      yAxisId={0}
+    />
+    <Tooltip
+      active={false}
+      animationDuration={400}
+      animationEasing="ease"
+      contentStyle={Object {}}
+      coordinate={
+        Object {
+          "x": 0,
+          "y": 0,
+        }
+      }
+      cursor={true}
+      cursorStyle={Object {}}
+      filterNull={true}
+      isAnimationActive={true}
+      itemStyle={Object {}}
+      labelStyle={Object {}}
+      offset={10}
+      separator=" : "
+      useTranslate3d={false}
+      viewBox={
+        Object {
+          "x1": 0,
+          "x2": 0,
+          "y1": 0,
+          "y2": 0,
+        }
+      }
+      wrapperStyle={Object {}}
+    />
+    <Legend
+      align="center"
+      iconSize={14}
+      layout="horizontal"
+      margin={
+        Object {
+          "top": 50,
+        }
+      }
+      verticalAlign="bottom"
+    />
+    <Line
+      activeDot={true}
+      animateNewValues={true}
+      animationBegin={0}
+      animationDuration={1500}
+      animationEasing="ease"
+      connectNulls={false}
+      dataKey="calories"
+      dot={true}
+      fill="#fff"
+      hide={false}
+      isAnimationActive={true}
+      legendType="line"
+      onAnimationEnd={[Function]}
+      onAnimationStart={[Function]}
+      points={Array []}
+      stroke="#82ca9d"
+      strokeWidth={1}
+      type="monotone"
+      xAxisId={0}
+      yAxisId={0}
+    />
+  </LineChart>
+</c>
+`;

@@ -7,7 +7,7 @@ import { PieChartData } from 'src/components/ChartPFC/types';
 import LineChart from 'src/components/LineChart';
 import { LineChartData } from 'src/components/LineChart/types';
 
-const dataMock: PieChartData[] = [
+export const dataMock: PieChartData[] = [
   {
     name: 'Белки',
     value: 200,
@@ -25,7 +25,7 @@ const dataMock: PieChartData[] = [
   },
 ];
 
-const anotherMock: LineChartData[] = [
+export const anotherMock: LineChartData[] = [
   {
     name: '1 неделя',
     calories: 2500,

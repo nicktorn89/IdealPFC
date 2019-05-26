@@ -2,11 +2,11 @@ import React from 'react';
 import { Section } from 'react-bulma-components/full';
 import { ChartsProps } from './types';
 import { PieChart, Pie, Cell } from 'recharts';
-import isEmpty from 'ramda/es/isEmpty';
+import * as R from 'ramda';
 
 const ChartPFC: React.FC<ChartsProps> = ({ data, size = 50 }) => {
 
-  if (isEmpty(data)) return null;
+  if (R.isEmpty(data)) return null;
 
   return (
     <Section>

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> should be equal to snapshot 1`] = `
+<c
+  className=""
+  renderAs="section"
+  size={null}
+  style={Object {}}
+>
+  <b
+    className=""
+    color={null}
+    disabled={false}
+    fullwidth={false}
+    inverted={false}
+    isSelected={false}
+    isStatic={false}
+    loading={false}
+    onClick={[Function]}
+    outlined={false}
+    remove={false}
+    renderAs="button"
+    reset={false}
+    rounded={false}
+    size={null}
+    state={null}
+    style={Object {}}
+    submit={false}
+    text={false}
+  >
+    Ввести данные
+  </b>
+  <m
+    breakpoint={null}
+    centered={false}
+    className=""
+    gapless={false}
+    multiline={true}
+    style={Object {}}
+  />
+</c>
+`;
