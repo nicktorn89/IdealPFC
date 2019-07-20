@@ -1,9 +1,9 @@
 export interface ChartsProps {
-  data: ChartData[];
+  data: PieChartData[];
   size?: number;
 }
 
-export type ChartData = {
+export type PieChartData = {
   name: string;
   value: number;
   color: string;
