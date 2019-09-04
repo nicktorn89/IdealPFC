@@ -39,9 +39,9 @@ module.exports = {
       {
         test: /\.sass$/,
         use: [
-          "style-loader", // creates style nodes from JS strings
-          "css-loader", // translates CSS into CommonJS
-          "sass-loader" // compiles Sass to CSS, using Node Sass by default
+          "style-loader",
+          "css-loader",
+          "sass-loader"
         ], 
       },
       {
@@ -73,10 +73,6 @@ module.exports = {
       fileWhitelist: [/\.woff/],
     })
   ],
-  // externals: {
-  //   'react': 'React',
-  //   'react-dom': 'ReactDOM',
-  // },
   performance: {
     hints: false,
   },
