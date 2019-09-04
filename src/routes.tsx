@@ -4,14 +4,11 @@ import { Lines } from 'react-preloaders';
 
 const Main = lazy(() => import('./modules/Main'));
 
-function routes() {
-  return (
-    <Router>
-      <Suspense fallback={<Lines />}>
-        <Route exact={true} path='/' component={Main} />
-      </Suspense>
-    </Router>
-  );
-}
-
+const routes = () =>
+  <Router>
+    <Suspense fallback={<Lines />}>
+      <Route exact={true} path='/' component={Main} />
+    </Suspense>
+  </Router>;
+  
 export default routes;

@@ -9,3 +9,9 @@ export interface MainState {
 
 export interface MainProps {
 }
+
+export interface Nutrients {
+  protein: number;
+  fats: number;
+  carbohydrates: number;
+}
