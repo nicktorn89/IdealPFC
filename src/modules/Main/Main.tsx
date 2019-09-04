@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MainState, MainProps } from './types';
 import FormComponent from '../../components/Form';
 import HeaderComponent from 'src/components/Header';
-import ChartPFC from 'src/components/ChartPFC';
-import { PieChartData } from 'src/components/ChartPFC/types';
+import PieChart from 'src/components/PieChart';
+import { PieChartData } from 'src/components/PieChart/types';
 import LineChart from 'src/components/LineChart';
 import { LineChartData } from 'src/components/LineChart/types';
 
@@ -48,34 +48,34 @@ export const anotherMock: LineChartData[] = [
   },
 ];
 
-export class Main extends React.Component<MainProps, MainState> {
-  public readonly state = {
+export const Main: React.FC<MainProps> = () => {
+  const [bodyParameters, setBodyParameters] = useState({
     weight: 0,
     height: 0,
     age: 0,
-  };
+  });
 
-  public handleFieldChange = ({ target }: React.MouseEvent<HTMLInputElement>) => {
+  const handleFieldChange = ({ target }: React.MouseEvent<HTMLInputElement>) => {
     const { name, value } = target as HTMLInputElement;
+    const newBodyParameters = { ...bodyParameters };
 
     if (isNaN(+value)) return;
 
-    this.setState({ [name]: +value });
-  }
+    (newBodyParameters as {[key: string]: number})[name] = Number(value);
+    setBodyParameters(newBodyParameters);
+  };
 
-  public render = () => {
-    return (
-      <React.Fragment>
-        <HeaderComponent />
-        <FormComponent
-          values={this.state}
-          onChangeField={this.handleFieldChange}
-        />
-        <ChartPFC data={dataMock} />
-        <LineChart data={anotherMock} />
-      </React.Fragment>
-    );
-  }
-}
+  return (
+    <React.Fragment>
+      <HeaderComponent />
+      <FormComponent
+        values={bodyParameters}
+        onChangeField={handleFieldChange}
+      />
+      <PieChart data={dataMock} />
+      <LineChart data={anotherMock} />
+    </React.Fragment>
+  );
+};
 
 export default Main;
